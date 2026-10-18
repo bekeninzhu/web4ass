@@ -1,0 +1,78 @@
+body.ticket-page {
+  background: #E6EFEC;
+  font-family: 'Montserrat', sans-serif;
+  color: #16302B;
+}
+.ticket-card {
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px #16302b20;
+}
+.ticket-card h2 {
+  margin: 0;
+  padding: 24px;
+  background: #0F6B5F;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.ticket-card .form-label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.ticket-card .form-control,
+.ticket-card .form-select {
+  background-color: #F4F7F5;
+  border: 1px solid #E6EFEC;
+  border-radius: 9px;
+}
+.place-field {
+  background: #F4F7F5;
+  border: 1px solid #E6EFEC;
+  border-radius: 9px;
+  padding: 4px 10px;
+}
+.place-field label {
+  display: block;
+  color: #6f817b;
+  font-size: 12px;
+}
+.place-field .form-control {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+.trip-btn {
+  border: 1px solid #0F6B5F;
+  color: #0F6B5F;
+  font-size: 13px;
+  border-radius: 16px;
+  padding: 7px 16px;
+}
+.btn-check:checked + .trip-btn {
+  background: #0F6B5F;
+  color: white;
+}
+.ticket-card .form-check-input:checked {
+  background-color: #0F6B5F;
+  border-color: #0F6B5F;
+}
+.ticket-card .input-group-text {
+  background: #0F6B5F;
+  border-color: #0F6B5F;
+  color: white;
+}
+.clear-btn, .find-btn {
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.clear-btn { border: 1px solid #16302B; }
+.find-btn { background: #F2A93B; color: #16302B; }
+.find-btn:hover { background: #e49b2d; }
+@media (max-width: 767px) {
+  .ticket-card h2 { padding: 16px; font-size: 19px; }
+  .ticket-card .form-check-label { font-size: 12px; }
+}

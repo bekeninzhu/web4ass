@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Reservation</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form class="bg-white p-4 border rounded">
+          <h2 class="mb-4">Reserve a table</h2>
+
+          <div class="mb-3">
+            <label class="form-label" for="name">Your name</label>
+            <input class="form-control" type="text" id="name" name="name" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" type="email" id="email" name="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="phone">Phone</label>
+            <input class="form-control" type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="guests">Guests</label>
+            <input class="form-control" type="number" id="guests" name="guests" min="1" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="date">Date</label>
+            <input class="form-control" type="date" id="date" name="date" required>
+          </div>
+
+          <fieldset class="mb-3">
+            <legend class="fs-6">Seating</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="seating" id="inside" value="inside" required>
+              <label class="form-check-label" for="inside">Inside</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="seating" id="terrace" value="terrace">
+              <label class="form-check-label" for="terrace">Terrace</label>
+            </div>
+          </fieldset>
+
+          <div class="mb-3">
+            <label class="form-label" for="meal">Meal</label>
+            <select class="form-select" id="meal" name="meal">
+              <option>Lunch</option>
+              <option>Dinner</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="comments">Comments</label>
+            <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+          </div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+            <label class="form-check-label" for="terms">I agree to the terms</label>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Reserve</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
